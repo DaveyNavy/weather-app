@@ -162,6 +162,15 @@ function displayError(errorCode) {
   container.appendChild(error);
 }
 
+function displayLoading() {
+  clear();
+  const container = document.querySelector("#content");
+  const gif = document.createElement("img");
+  gif.setAttribute("src", "./images/loading.gif");
+  gif.setAttribute("style", "width: 5rem");
+  container.appendChild(gif);
+}
+
 const form = document.querySelector("form");
 const input = document.querySelector("input");
 form.addEventListener("submit", (e) => {
@@ -171,5 +180,6 @@ form.addEventListener("submit", (e) => {
   p.then((response) => displayData(response)).catch((error) =>
     displayError(error.message)
   );
+  displayLoading();
   form.reset();
 });
