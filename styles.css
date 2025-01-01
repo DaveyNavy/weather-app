@@ -7,7 +7,29 @@ form {
     padding: 2rem;
 }
 
+.icon {
+    width: 2rem;
+}
+
+.temperature-header {
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
 #temperature {
     display: flex;
     gap: 0.5rem;
+}
+
+.description {
+    padding: 0 2rem;
+}
+
+.forecast {
+    display: grid;
+    grid-template-rows: 4rem auto;
+    grid-auto-columns: 15rem;
+    grid-auto-flow: column;
+    text-align: center;
 }
