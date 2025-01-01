@@ -156,9 +156,7 @@ function displayError(errorCode) {
   clear();
   const container = document.querySelector("#content");
   const error = document.createElement("h1");
-  if (errorCode == 400) {
-    error.textContent = "Unable to find data for this location!";
-  }
+  error.textContent = "Unable to find data for this location!";
   container.appendChild(error);
 }
 
