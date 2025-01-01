@@ -1,0 +1,13 @@
+form {
+    display: flex;
+    gap: 1rem;
+}
+
+#content {
+    padding: 2rem;
+}
+
+#temperature {
+    display: flex;
+    gap: 0.5rem;
+}
